@@ -3,3 +3,113 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+/* <!-- 
+    <div class=" bg-white relative z-0 text-center pt-5 rounded-lg flex-1">
+      <div class="containe flex gap-[5px] z-10">
+
+      <div class="bg-white text-center">
+        <a href="">
+          <img class="mx-auto " src="./image/solar-5-metal-strap-black-official-200x200.webp" alt="">
+        </a>
+       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Haylou Solar 5 Smart Watch with Metallic Strap</h3>
+       <div class="pb-4">
+        <span class="font-semibold text-xl mr-4 text-[#ef4a23]">5,850 Tk</span> 
+       <span class="font-medium line-through text-gray-500"  > 6,399 Tk</span>
+       </div>
+      </div>
+      <div class="bg-white text-center">
+        <a href="">
+          <img class="mx-auto w-[200px] h-[200px]" src="./image/bip-5-unity-grey-official-200x200.webp" alt="">
+        </a>
+       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Amazfit Bip 5 Unity</h3>
+       <div class="pb-4">
+        <span class="font-semibold text-xl mr-4 text-[#ef4a23]">5,500 Tk</span> 
+       </div>
+      </div>
+      </div>
+      <span class="bg-blue-600 px-[5px] text-white absolute left-[184px] top-[120px]">vs</span>
+      <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] py-2 w-[90%] font-semibold rounded-md transition duration-300 ease-in-out
+         transform hover:scale-105">Full Comparision</button>
+    </div>
+    <div class=" bg-white relative z-0 text-center pt-5 rounded-lg">
+      <div class="containe flex gap-[5px] z-10">
+
+      <div class="bg-white text-center">
+        <a href="">
+          <img class="mx-auto" src="./image/spark-40-pro-ink-black-official-200x200.webp" alt="">
+        </a>
+       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Tecno SPARK 40 Pro</h3>
+       <div class="pb-4">
+        <span class="font-semibold text-xl mr-4 text-[#ef4a23]">19,000 Tk</span> 
+       <span class="font-medium line-through text-gray-500"  > 20,000 Tk</span>
+       </div>
+      </div>
+      <div class="bg-white text-center">
+        <a href="">
+          <img class="mx-auto" src="./image/vivo-y29-elegant-white-01-200x200.webp" alt="">
+        </a>
+       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Vivo Y29</h3>
+       <div class="pb-4">
+        <span class="font-semibold text-xl mr-4 text-[#ef4a23]">19,999 Tk</span> 
+       </div>
+      </div>
+      </div>
+      <span class="bg-blue-600 px-[5px] text-white absolute left-[184px] top-[120px]">vs</span>
+      <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] py-2 w-[90%] mb-4  font-semibold rounded-md transition duration-300 ease-in-out
+         transform hover:scale-105">Full Comparision</button>
+    </div>
+    <div class=" bg-white relative z-0 text-center pt-5 rounded-lg">
+      <div class="containe flex gap-[5px] z-10">
+
+      <div class="bg-white text-center">
+        <a href="">
+          <img class="mx-auto" src="./image/spark-40-pro-ink-black-official-200x200.webp" alt="">
+        </a>
+       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Tecno SPARK 40 Pro</h3>
+       <div class="pb-4">
+        <span class="font-semibold text-xl mr-4 text-[#ef4a23]">19,000 Tk</span> 
+       <span class="font-medium line-through text-gray-500"  > 20,000 Tk</span>
+       </div>
+      </div>
+      <div class="bg-white text-center">
+        <a href="">
+          <img class="mx-auto" src="./image/vivo-y29-elegant-white-01-200x200.webp" alt="">
+        </a>
+       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Vivo Y29</h3>
+       <div class="pb-4">
+        <span class="font-semibold text-xl mr-4 text-[#ef4a23]">19,999 Tk</span> 
+       </div>
+      </div>
+      </div>
+      <span class="bg-blue-600 px-[5px] text-white absolute left-[184px] top-[120px]">vs</span>
+      <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] py-2 w-[90%] mb-4  font-semibold rounded-md transition duration-300 ease-in-out
+         transform hover:scale-105">Full Comparision</button>
+    </div>
+    <div class=" bg-white relative z-0 text-center pt-5 rounded-lg">
+      <div class="containe flex gap-[5px] z-10">
+
+      <div class="bg-white text-center">
+        <a href="">
+          <img class="mx-auto" src="./image/spark-40-pro-ink-black-official-200x200.webp" alt="">
+        </a>
+       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Tecno SPARK 40 Pro</h3>
+       <div class="pb-4">
+        <span class="font-semibold text-xl mr-4 text-[#ef4a23]">19,000 Tk</span> 
+       <span class="font-medium line-through text-gray-500"  > 20,000 Tk</span>
+       </div>
+      </div>
+      <div class="bg-white text-center">
+        <a href="">
+          <img class="mx-auto" src="./image/vivo-y29-elegant-white-01-200x200.webp" alt="">
+        </a>
+       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Vivo Y29</h3>
+       <div class="pb-4">
+        <span class="font-semibold text-xl mr-4 text-[#ef4a23]">19,999 Tk</span> 
+       </div>
+      </div>
+      </div>
+      <span class="bg-blue-600 px-[5px] text-white absolute left-[184px] top-[120px]">vs</span>
+      <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] py-2 w-[90%] mb-4  font-semibold rounded-md transition duration-300 ease-in-out
+         transform hover:scale-105">Full Comparision</button>
+    </div> --> */
