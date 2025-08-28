@@ -23,49 +23,80 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-[#f2f4f8]">
-    <header class=" ">
+    <header class="">
       <div class="bg-black py-[15px]">
-        <div class="flex justify-between items-center mx-auto max-w-[1320px]">
+        <div
+          class="flex justify-between items-center mx-auto max-w-[1320px] max-sm:flex-col"
+        >
+          <div
+            class="sm:hidden max-sm:visible max-sm:text-gray-300 absolute left-6 top-6 text-xl"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
           <!-- logo part -->
           <div class="ml-3">
-            <img src="./image/logo (9).png" alt="" />
+            <img
+              class="max-sm:w-[90px] max-sm:mb-2"
+              src="./image/logo (9).png"
+              alt=""
+            />
           </div>
           <!-- input part -->
-          <div class="relative">
+          <div class="relative text-center">
             <input
-              class="w-[540px] h-10 border-none rounded-sm bg-white px-3 outline-none"
+              class="w-[540px] h-10 border-none rounded-sm bg-white px-3 outline-none max-sm:w-[380px] max-sm:mb-3 max-sm:hidden"
               placeholder="Search"
               type="text"
             />
             <i
-              class="fa-solid fa-magnifying-glass text-xl absolute right-3 top-3 cursor-pointer"
+              class="fa-solid fa-magnifying-glass text-xl absolute right-3 top-3 cursor-pointer max-sm:text-gray-300 max-sm:top-[-35px] max-sm:left-[160px]"
             ></i>
           </div>
           <!-- nav part -->
-          <div class="office_container mr-7">
+          <div
+            class="mr-7 max-sm:mr-0 max-sm:absolute max-sm:bottom-0 max-sm:w-full"
+          >
             <!-- sub container -->
-            <div class="flex items-center gap-4">
+            <div
+              class="flex items-center justify-center gap-4 max-sm:gap-6 max-sm:bg-black max-sm:py-3 max-sm:pl-5 max-sm:fixed max-sm:bottom-0 max-sm:w-full max-sm:z-50"
+            >
               <div class="text-2xl">
                 <i class="fa-solid fa-bag-shopping text-[#ef4a23]"></i>
               </div>
               <div class="cursor-pointer">
-                <h3 class="text-base text-white">Office</h3>
-                <p class="text-sm text-[#838383]">Latest Offers</p>
+                <h3
+                  class="text-base text-white max-sm:text-sm max-sm:text-gray-300"
+                >
+                  Office
+                </h3>
+                <p class="text-sm text-[#838383] max-sm:hidden">
+                  Latest Offers
+                </p>
               </div>
               <div class="text-2xl">
                 <i class="fas fa-bolt text-[#ef4a23]"></i>
               </div>
               <div class="cursor-pointer">
-                <h3 class="text-base text-white">Happy Hour</h3>
-                <p class="text-sm text-[#838383]">Special Deals</p>
+                <h3
+                  class="text-base text-white max-sm:text-sm max-sm:text-gray-300"
+                >
+                  Happy Hour
+                </h3>
+                <p class="text-sm text-[#838383] max-sm:hidden">
+                  Special Deals
+                </p>
               </div>
               <div class="text-2xl">
                 <i class="fa-solid fa-user text-[#ef4a23]"></i>
               </div>
               <div>
-                <h3 class="text-base text-white cursor-pointer">Account</h3>
+                <h3
+                  class="text-base text-white cursor-pointer max-sm:text-sm max-sm:text-gray-300"
+                >
+                  Account
+                </h3>
 
-                <p class="text-xs text-[#838383]">
+                <p class="text-xs text-[#838383] max-sm:hidden">
                   <span
                     class="hover:text-[#ef4a23] transition duration-300 cursor-pointer"
                     >Register</span
@@ -79,7 +110,7 @@
               </div>
               <div>
                 <button
-                  class="py-2 px-5 rounded-sm mr-3 cursor-pointer bg-gradient-to-r from-blue-500 to-sky-300"
+                  class="py-2 px-5 rounded-sm mr-3 cursor-pointer bg-gradient-to-r from-blue-500 to-sky-300 max-sm:py-0 max-sm:mr-0 max-sm:hidden"
                 >
                   PC Builder
                 </button>
@@ -88,82 +119,203 @@
           </div>
         </div>
       </div>
-    <nav class="bg-white shadow-sm">
-     <ul class="flex justify-center items-center gap-5 py-4  max-w-[1300px] mx-auto">
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Desktop</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Laptop</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Component</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Monitor</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Power </a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Phone</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Tablet</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Gaming</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Gadget</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Camera</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Security</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Networking</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Software</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Gaming</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">TV</a></li>
-          <li><a class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]" href="">Appliance</a></li>
-     </ul>
-    </nav>
-    
+      <nav class="bg-white shadow-sm max-sm:hidden">
+        <ul
+          class="flex justify-center items-center gap-5 py-4 max-w-[1300px] mx-auto"
+        >
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Desktop</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Laptop</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Component</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Monitor</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Power
+            </a>
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Phone</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Tablet</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Gaming</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Gadget</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Camera</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Security</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Networking</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Software</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Gaming</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >TV</a
+            >
+          </li>
+          <li>
+            <a
+              class="no-underline font-semibold text-[#222] hover:text-[#ef4a23]"
+              href=""
+              >Appliance</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section class="mx-auto max-w-[1300px] mt-7">
-        <div class="baner_container flex justify-between gap-2 ">
+
+    <main class="">
+      <section class="mx-auto max-w-[1300px] mt-7 ">
+        <div
+          class="flex justify-between gap-2 max-sm:flex-col max-sm:items-center"
+        >
           <!-- left image -->
-          <div class="w-[75%]   " >
-            <img class="w-[950px] h-[509px] px-1 object-fill shadow-[5px_5px_0_rgba(0,0,0,0.03)]" src="./image/star-link-home-2025-banner-982x500.webp " alt="">
+          <div class="w-[75%] max-sm:w-full">
+            <img
+              class="max-w-[950px] max-h-[509px] px-1 object-fill shadow-[5px_5px_0_rgba(0,0,0,0.03)] max-sm:w-full max-sm:w"
+              src="./image/Sony-WH-1000XM6-Noise-Cancelling-Wireless-Headphone-(Official)-982x500.webp "
+              alt=""
+            />
           </div>
           <!-- sub container -->
-          <div class="sub_banner_container max-w-[25%] h-full px-1 ">
-            <div class="bg-[#FFE8A1] py-6 px-8 text-center shadow-[5px_5px_0_rgba(0,0,0,0.03)] mb-8">
+          <div class="sm:max-w-[25%] h-full px-1 max-sm:w-[98%] max-sm:mt-3">
+            <div
+              class="bg-[#FFE8A1] py-6 px-8 text-center shadow-[5px_5px_0_rgba(0,0,0,0.03)] mb-8 max-sm:mb-3"
+            >
               <h4 class="font-bold">Compare Product</h4>
               <p class="text-[#666666]">Choose Two Products to Compare</p>
               <!-- input part 1 -->
               <div class="relative mt-4">
-            <input
-              class="w-[100%] h-10 border-none rounded-sm bg-white px-3 outline-none"
-              placeholder="Search"
-              type="text"
-            />
-            <i
-              class="fa-solid fa-magnifying-glass text-xl absolute right-3 top-3 cursor-pointer text-gray-500"
-            ></i>
-          </div>
-          <!-- input part 2 -->
+                <input
+                  class="w-[100%]  h-10 border-none rounded-sm bg-white px-3 outline-none"
+                  placeholder="Search"
+                  type="text"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass text-xl absolute right-3 top-3 cursor-pointer text-gray-500"
+                ></i>
+              </div>
+              <!-- input part 2 -->
               <div class="relative mt-4">
-            <input
-              class="w-[100%] h-10 border-none rounded-sm bg-white px-3 outline-none mb-4 "
-              placeholder="Search"
-              type="text"
-            />
-            <i
-              class="fa-solid fa-magnifying-glass text-xl absolute right-3 top-3 cursor-pointe text-gray-500 cursor-pointer"
-            ></i>
-          </div>
-          <button class="w-[100%] font-semibold py-2 border-2 border-blue-600 cursor-pointer hover:bg-[#3749bb] hover:text-white rounded-md">View Comparison</button>
+                <input
+                  class="w-[100%] h-10 border-none rounded-sm bg-white px-3 outline-none mb-4"
+                  placeholder="Search"
+                  type="text"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass text-xl absolute right-3 top-3 cursor-pointe text-gray-500 cursor-pointer"
+                ></i>
+              </div>
+              <button
+                class="w-[100%] font-semibold py-2 border-2 border-blue-600 cursor-pointer hover:bg-[#3749bb] hover:text-white rounded-md"
+              >
+                View Comparison
+              </button>
             </div>
 
             <div >
-              <img class=" shadow-[5px_5px_0_rgba(0,0,0,0.03)] p-1" src="./image/job-career-2024.webp" alt="">
+              <img
+                class="shadow-[5px_5px_0_rgba(0,0,0,0.03)] p-1 max-sm:object-cover max-sm:w-full max-sm:p-0"
+                src="./image/job-career-2024.webp"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="mt-8 bg-white py-2 px-4 rounded-3xl mx-auto max-w-[1300px] ">
-          <marquee class="" behavior="" direction="left">Sunday, 24 August, all our outlets are open except the IDB outlet. Additionally, our online activities are open and operational.</marquee>
+        <div
+          class="mt-8 bg-white py-2 px-4 rounded-3xl mx-auto max-w-[1300px] max-sm:w-full "
+        >
+          <marquee class="" behavior="" direction="left"
+            >Sunday, 24 August, all our outlets are open except the IDB outlet.
+            Additionally, our online activities are open and
+            operational.</marquee
+          >
         </div>
       </section>
       <section>
-        <div class=" mx-auto max-w-[1300px] flex justify-between items-center mt-12 mb-14">
-
-          <div class="flex gap-6 bg-white px-5 py-3 rounded-md w-[300px] hover:shadow-[5px_5px_0_rgba(0,0,0,0.03)] transition-all duration-300 ease-in-out cursor-pointer ">
+        <div class="mx-auto max-w-[1300px] flex justify-between items-center mt-12 mb-14 max-sm:flex-col ">
+          <div
+            class="flex gap-6 bg-white px-5 py-3 rounded-md w-[300px] hover:shadow-[5px_5px_0_rgba(0,0,0,0.03)] transition-all duration-300 ease-in-out cursor-pointer max-sm:mb-3 max-sm:w-[90%]">
             <div>
-              <i class="fa-solid fa-laptop bg-[#ef4a23] text-white rounded-[50px] h-12 w-12 text-center pt-[13px] text-[20px] justify-center items-center "></i>
+              <i
+                class="fa-solid fa-laptop bg-[#ef4a23] text-white rounded-[50px] h-12 w-12 text-center pt-[13px] text-[20px] justify-center items-center " ></i>
             </div>
             <div>
               <h3 class="font-bold text-[18px]">Laptop Finder</h3>
@@ -171,434 +323,837 @@
             </div>
           </div>
 
-          <div class="flex gap-6 bg-white px-5 py-3 rounded-md w-[300px] hover:shadow-[5px_5px_0_rgba(0,0,0,0.03)] transition-all duration-300 ease-in-out cursor-pointer ">
+          <div
+            class="flex gap-6 bg-white px-5 py-3 rounded-md w-[300px] hover:shadow-[5px_5px_0_rgba(0,0,0,0.03)] transition-all duration-300 ease-in-out cursor-pointer max-sm:mb-3 max-sm:w-[90%]">
             <div>
-              <i class="fa-solid fa-message  bg-[#ef4a23] text-white rounded-[50px] h-12 w-12 text-center pt-[13px] text-[20px] justify-center items-center"></i>
+              <i
+                class="fa-solid fa-message bg-[#ef4a23] text-white rounded-[50px] h-12 w-12 text-center pt-[13px] text-[20px] justify-center items-center"
+              ></i>
             </div>
             <div>
               <h3 class="font-bold text-[18px]">Laptop Finder</h3>
               <p class="text-[#444]">Find Your Laptop Easily</p>
             </div>
           </div>
-          <div class="flex gap-6 bg-white px-5 py-3 rounded-md w-[300px] hover:shadow-[5px_5px_0_rgba(0,0,0,0.03)] transition-all duration-300 ease-in-out cursor-pointer ">
+          <div
+            class="flex gap-6 bg-white px-5 py-3 rounded-md w-[300px] hover:shadow-[5px_5px_0_rgba(0,0,0,0.03)] transition-all duration-300 ease-in-out cursor-pointer max-sm:mb-3 max-sm:w-[90%]">
             <div>
-              <i class="fa-solid fa-house  bg-[#ef4a23] text-white rounded-[50px] h-12 w-12 text-center pt-[13px] text-[20px] justify-center items-center"></i>
+              <i
+                class="fa-solid fa-house bg-[#ef4a23] text-white rounded-[50px] h-12 w-12 text-center pt-[13px] text-[20px] justify-center items-center"
+              ></i>
             </div>
             <div>
               <h3 class="font-bold text-[18px]">Laptop Finder</h3>
               <p class="text-[#444]">Find Your Laptop Easily</p>
             </div>
           </div>
-          <div class="flex gap-6 bg-white px-5 py-3 rounded-md w-[300px] hover:shadow-[5px_5px_0_rgba(0,0,0,0.03)] transition-all duration-300 ease-in-out cursor-pointer ">
+          <div
+            class="flex gap-6 bg-white px-5 py-3 rounded-md w-[300px] hover:shadow-[5px_5px_0_rgba(0,0,0,0.03)] transition-all duration-300 ease-in-out cursor-pointer max-sm:mb-3 max-sm:w-[90%] "
+          >
             <div>
-              <i class="fa-solid fa-gear  bg-[#ef4a23] text-white rounded-[50px] h-12 w-12 text-center pt-[13px] text-[20px] justify-center items-center"></i>
+              <i
+                class="fa-solid fa-gear bg-[#ef4a23] text-white rounded-[50px] h-12 w-12 text-center pt-[13px] text-[20px] justify-center items-center"
+              ></i>
             </div>
             <div>
               <h3 class="font-bold text-[18px]">Laptop Finder</h3>
               <p class="text-[#444]">Find Your Laptop Easily</p>
             </div>
           </div>
-         
         </div>
       </section>
       <section class="mx-auto max-w-[1300px] ">
         <!-- title -->
-        <div >
-          <div class="text-center ">
-            <h3 class="font-bold leading-10 ">Featured Category</h3>
-            <p class="text-sm">Get Your Desired Product from Featured Category!</p>
+        <div>
+          <div class="text-center">
+            <h3 class="font-bold leading-10">Featured Category</h3>
+            <p class="text-sm">
+              Get Your Desired Product from Featured Category!
+            </p>
           </div>
           <!-- card container -->
-          <div class=" text-center grid grid-cols-8 gap-4 mt-6">
-
-            <div class="  hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/drone.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Drone</span>
-              
+          <div class="text-center grid grid-cols-8 gap-4 mt-6 max-sm:grid-cols-2 max-sm:px-3">
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/drone.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Drone</span
+              >
             </div>
-            <div class=" hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/gimbal.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Gimbal</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/gimbal.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Gimbal</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/fan.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Charger Fan</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/fan.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Charger Fan</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/devices.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Table PC</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/devices.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Table PC</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/smart-tv.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">TV</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/smart-tv.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >TV</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/mobile-phone.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Mobile-Phone</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/mobile-phone.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Mobile-Phone</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/charger.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Mobile-Charger</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/charger.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Mobile-Charger</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/webcam.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Web-Cam</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/webcam.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Web-Cam</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/razor.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Trimmer</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/razor.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Trimmer</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/smartwatch.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Smart-Watch</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/smartwatch.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Smart-Watch</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/phone.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Earphone</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/phone.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Earphone</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/music.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Earbds</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/music.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Earbds</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/blutooth.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Bluetooth Speaker</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/blutooth.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Bluetooth Speaker</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl ">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/console.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Gaming Console</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/console.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Gaming Console</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/connection.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Charger Type-C</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/connection.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Charger Type-C</span
+              >
             </div>
-            <div class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out  cursor-pointer bg-white p-3 rounded-xl">
-               <img class="w-[45px] h-[45px] mx-auto" src="./image/drone.png" alt="">
-               <span class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333] ">Drone</span>
-              
+            <div
+              class="hover:shadow-[5px_5px_0_rgba(0,0,0,0.04)] transition-all duration-300 ease-in-out cursor-pointer bg-white p-3 rounded-xl"
+            >
+              <img
+                class="w-[45px] h-[45px] mx-auto"
+                src="./image/drone.png"
+                alt=""
+              />
+              <span
+                class="font-medium text-sm hover:text-[#ef4a23] mt-2 block cursor-pointer text-[#333]"
+                >Drone</span
+              >
             </div>
           </div>
         </div>
       </section>
 
-<!--! Comparision part -->
-<section class="mx-auto max-w-[1300px] mt-20 ">
-  <div class="text-center mb-6"> 
-    <h3 class="font-bold text-2xl">Featured Comparisons</h3>
-    <p >Compare & Choose Your Desired Product!</p>
-  </div>
-
-  <!-- card compariison -->
-  <div class="grid grid-cols-3 gap-5  " >
-
-    
-    <div class=" bg-white relative  text-center pt-5 rounded-lg w-[430px] ">
-      <div class="containe flex justify-between items-center gap-[22px] px-3 ">
-
-<!-- left product -->
-      <div class="bg-white text-center border-r pr-[38px] mb-4  border-gray-200">
-        <a href="">
-          <img class="mx-auto object-cover pt-3" src="./image/hsu-12energycool-official-200x200.webp" alt="">
-        </a>
-       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-4 cursor-pointer">Haier 1.6 Ton <br> EnergyCool Inverter AC</h3>
-       <div class="pb-2">
-        <span class="font-semibold text-xl mr-2 text-[#ef4a23]">55,493 Tk</span> 
-       <span class="font-medium line-through text-gray-500"  > 74,990 Tk</span>
-       </div>
-      </div>
-      <!-- Right product -->
-      <div class="bg-white text-center">
-        <a href="">
-          <img class="mx-auto object-cover " src="./image/msi-12crn-official-200x200.webp" alt="">
-        </a>
-       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-4 pb-5 cursor-pointer">Midea 1.5 Ton Inverter AC</h3>
-
-
-
-       <div class="pb-4">
-        <span class="font-semibold text-xl mr-2 text-[#ef4a23]">54,686 Tk</span>
-       <span class="font-medium line-through text-gray-500"  > 73,90 Tk</span>
-
-       </div>
-      </div>
-      </div>
-      <span class="bg-blue-600 px-[5px] text-white absolute left-[210px] top-[120px]">vs</span>
-
-      <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px]  w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out
-         transform hover:scale-105">Full Comparision</button>
-    </div>
-    <div class=" bg-white relative z-0 text-center pt-5 rounded-lg w-[430px] ">
-      <div class="containe flex justify-between items-center gap-[22px] px-3 ">
-
-<!-- left product -->
-      <div class="bg-white text-center border-r pr-[38px] mb-4  border-gray-200">
-        <a href="">
-          <img class="mx-auto object-cover pt-3" src="./image/spark-40-pro-ink-black-official-200x200.webp" alt="">
-        </a>
-       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Tecno SPARK 40 Pro</h3>
-       <div class="pb-4">
-        <span class="font-semibold text-xl mr-2 text-[#ef4a23]">19,000 Tk</span> 
-       <span class="font-medium line-through text-gray-500"  > 20,000 Tk</span>
-       </div>
-      </div>
-      <!-- Right product -->
-      <div class="bg-white text-center">
-        <a href="">
-          <img class="mx-auto object-cover " src="./image/vivo-y29-elegant-white-01-200x200.webp" alt="">
-        </a>
-       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Vivo Y29</h3>
-
-
-
-       <div class="pb-4">
-        <span class="font-semibold text-xl mr-2 text-[#ef4a23]">19,999 Tk</span>
-       <span class="font-medium line-through text-gray-500"  > 20,000 Tk</span>
-
-       </div>
-      </div>
-      </div>
-      <span class="bg-blue-600 px-[5px] text-white absolute left-[210px] top-[120px]">vs</span>
-
-      <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px]  w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out
-         transform hover:scale-105">Full Comparision</button>
-    </div>
-    <div class=" bg-white relative z-0 text-center pt-5 rounded-lg w-[430px] ">
-      <div class="containe flex justify-between items-center gap-[22px] px-3 ">
-
-<!-- left product -->
-      <div class="bg-white text-center border-r pr-[38px] mb-4  border-gray-200">
-        <a href="">
-          <img class="mx-auto object-cover pt-3" src="./image/solar-5-metal-strap-black-official-200x200.webp" alt="">
-        </a>
-       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-3 cursor-pointer">Haylou Solar 5 Smart Watch</h3>
-       <div class="pb-4">
-        <span class="font-semibold text-xl mr-2 text-[#ef4a23]">5,850 Tk</span> 
-       <span class="font-medium line-through text-gray-500"  > 6,399 Tk</span>
-       </div>
-      </div>
-      <!-- Right product -->
-      <div class="bg-white text-center">
-        <a href="">
-          <img class="mx-auto object-cover " src="./image/bip-5-unity-grey-official-200x200.webp" alt="">
-        </a>
-       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer">Amazfit Bip 5 Unity</h3>
-
-
-
-       <div class="pb-4">
-        <span class="font-semibold text-xl mr-2 text-[#ef4a23]">5,500 Tk</span>
-       <span class="font-medium line-through text-gray-500"  > 5,999 Tk</span>
-
-       </div>
-      </div>
-      </div>
-      <span class="bg-blue-600 px-[5px] text-white absolute left-[210px] top-[120px]">vs</span>
-
-      <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px]  w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out
-         transform hover:scale-105">Full Comparision</button>
-    </div>
-    <div class=" bg-white relative z-0 text-center pt-5 rounded-lg w-[430px] ">
-
-      <div class="containe flex justify-between items-center gap-[22px] px-3 ">
-
-<!-- left product -->
-      <div class="bg-white text-center border-r pr-[38px] border-gray-200">
-        <div>
-          <a href="">
-          <img class="mx-auto object-cover pt-3" src="./image/spacebuds-neo-01-200x200.webp" alt="">
-        </a>
+      <!-- Comparision part -->
+      <section class="mx-auto max-w-[1300px] mt-20 ">
+        <div class="text-center mb-6">
+          <h3 class="font-bold text-2xl">Featured Comparisons</h3>
+          <p>Compare & Choose Your Desired Product!</p>
         </div>
-       <div class="pt-5">
-        <h3 class="hover:text-[#ef4a23] underline font-semibold pt-8  pb-8 cursor-pointer">Oraimo SpaceBuds Neo</h3>
-       </div>
-       <div class="pb-2">
-        <span class="font-semibold text-xl mr-2 text-[#ef4a23]">1,300 Tk</span> 
-       <span class="font-medium line-through text-gray-500"  > 1,399 Tk</span>
-       </div>
-      </div>
-      <!-- Right product -->
-      <div class="bg-white text-center">
-        <div>
-          <a href="">
-          <img class="mx-auto object-cover " src="./image/haylou-x1-neo-02-200x200.webp" alt="">
-        </a>
-        </div>
-      <div>
-         <h3 class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-10 cursor-pointer">Haylou X1 Neo True  Wireless Earbuds</h3>
-      </div>
 
-       <div class="pb-10">
-        <span class="font-semibold text-xl mr-4 text-[#ef4a23]">19,999 Tk</span>
-       <span class="font-medium line-through text-gray-500"  > 20,000 Tk</span>
-
-       </div>
-      </div>
-      </div>
-      <span class="bg-blue-600 px-[5px] text-white absolute left-[185px] top-[120px]">vs</span>
-
-      <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px]  w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out
-         transform hover:scale-105">Full Comparision</button>
-    </div>
-    <div class=" bg-white relative z-0 text-center pt-5 rounded-lg w-[430px] ">
-      <div class="containe flex justify-between items-center gap-[22px] px-3 ">
-
-<!-- left product -->
-      <div class="bg-white text-center border-r pr-[38px] mb-4  border-gray-200">
-        <a href="">
-          <img class="mx-auto object-cover pt-3" src="./image/24b20jh2-08-200x200.webp" alt="">
-        </a>
-       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-8 cursor-pointer">AOC 22B20JH2 22" 100Hz 1ms IPS FHD Monitor</h3>
-       <div class="pb-4">
-        <span class="font-semibold text-xl mr-4 text-[#ef4a23]">12,000 Tk</span> 
-       <span class="font-medium line-through text-gray-500"  > 20,000 Tk</span>
-       </div>
-      </div>
-      <!-- Right product -->
-      <div class="bg-white text-center">
-        <a href="">
-          <img class="mx-auto object-cover " src="./image/pro-mp225-04-200x200.webp" alt="">
-        </a>
-       <h3 class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-8 cursor-pointer">MSI PRO MP225 21.5" 100Hz IPS FHD Monitor</h3>
+        <!-- card compariison -->
+        <div class="grid grid-cols-3 gap-5 max-sm:grid-cols-1  max-sm:w-full">
 
 
+          <div class="bg-white relative text-center pt-5 rounded-lg w-[430px] max-sm:w-full">
+            <div class=" flex justify-between items-center gap-[22px] px-3 max-sm:px-0 max-sm:gap-0  max-sm:justify-around ">
+              <!-- left product -->
+              <div class="bg-white text-center border-r pr-[38px] mb-4 border-gray-200 max-sm:pr-[30px]">
+                <a href="">
+                  <img
+                    class="mx-auto object-cover pt-3 "
+                    src="./image/hsu-12energycool-official-200x200.webp"
+                    alt=""
+                  />
+                </a>
+                <h3
+                  class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-4 cursor-pointer"
+                >
+                  Haier 1.6 Ton <br />
+                  EnergyCool Inverter AC
+                </h3>
+                <div class="pb-2">
+                  <span class="font-semibold text-xl mr-2 text-[#ef4a23]">55,493 Tk</span>
+                  <span class="font-medium line-through text-gray-500">74,990 Tk</span>
+                </div>
+              </div>
 
-       <div class="pb-4">
-        <span class="font-semibold text-xl mr-2 text-[#ef4a23]">12,800 Tk</span>
-       <span class="font-medium line-through text-gray-500"  > 20,000 Tk</span>
+              <!-- Right product -->
+              <div class="bg-white text-center">
+                <a href="">
+                  <img
+                    class="mx-auto object-cover"
+                    src="./image/msi-12crn-official-200x200.webp"
+                    alt=""
+                  />
+                </a>
+                <h3
+                  class="hover:text-[#ef4a23] underline font-semibold pt-4 pb-5 cursor-pointer"
+                >
+                  Midea 1.5 Ton Inverter AC
+                </h3>
 
-       </div>
-      </div>
-      </div>
-      <span class="bg-blue-600 px-[5px] text-white absolute left-[210px] top-[120px]">vs</span>
+                <div class="pb-4">
+                  <span class="font-semibold text-xl mr-2 text-[#ef4a23]"
+                    >54,686 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    73,90 Tk</span
+                  >
+                </div>
+              </div>
+            </div>
+            <span
+              class="bg-blue-600 px-[5px] text-white absolute left-[210px] top-[120px]">vs</span>
+            <button
+              class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out transform hover:scale-105">
+              Full Comparision
+            </button>
+          </div>
+          <!--! card2 -->
 
-      <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px]  w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out
-         transform hover:scale-105">Full Comparision</button>
-    </div>
-    <div class=" bg-white relative z-0 text-center pt-5 rounded-lg w-[430px] ">
-      <div class="containe flex justify-between items-center gap-[22px] px-3 ">
+          <div class="bg-white relative z-0 text-center pt-5 rounded-lg w-[430px]  max-sm:w-full">
+            <div class="containe flex justify-between items-center gap-[22px] px-3 max-sm:px-0 max-sm:gap-0    max-sm:justify-around">
+              <!-- left product -->
+              <div
+                class="bg-white text-center border-r pr-[38px] mb-4 border-gray-200 max-sm:pr-[21px]"
+              >
+                <a href="">
+                  <img
+                    class="mx-auto object-cover pt-3"
+                    src="./image/spark-40-pro-ink-black-official-200x200.webp"
+                    alt=""
+                  />
+                </a>
+                <h3
+                  class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer"
+                >
+                  Tecno SPARK 40 Pro
+                </h3>
+                <div class="pb-4">
+                  <span class="font-semibold text-xl mr-2 text-[#ef4a23]"
+                    >19,000 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    20,000 Tk</span
+                  >
+                </div>
+              </div>
+              <!-- Right product -->
+              <div class="bg-white text-center">
+                <a href="">
+                  <img
+                    class="mx-auto object-cover"
+                    src="./image/vivo-y29-elegant-white-01-200x200.webp"
+                    alt=""
+                  />
+                </a>
+                <h3
+                  class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer"
+                >
+                  Vivo Y29
+                </h3>
 
-<!-- left product -->
-      <div class="bg-white text-center border-r pr-[38px] mb-4  border-gray-200">
-        <div>
-          <a href="">
-          <img class="mx-auto object-cover pt-3" src="./image/ideapad-slim-3i-15iru8-01-200x200.webp" alt="">
-        </a>
-        </div>
-      <div class="pt-12">
-         <h3 class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-8 cursor-pointer">Lenovo IdeaPad </h3>
-      </div>
-      <div class="pb-4">
-        <span class="font-semibold text-xl mr-2 text-[#ef4a23]">12,000 Tk</span> 
-       <span class="font-medium line-through text-gray-500"  > 20,000 Tk</span>
-       </div>
-      </div>
-      <!-- Right product -->
-      <div class="bg-white text-center">
-        <div>
-          <a href="">
-          <img class="mx-auto object-cover " src="./image/vivobook-go-15-l1504fa-mixed-black-01-200x200.webp" alt="">
-        </a>
-        </div>
-       <div class="">
-        <h3 class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-14 cursor-pointer">ASUS Vivobook</h3>
-       </div>
+                <div class="pb-4">
+                  <span class="font-semibold text-xl mr-2 text-[#ef4a23]"
+                    >19,999 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    20,000 Tk</span
+                  >
+                </div>
+              </div>
+            </div>
+            <span
+              class="bg-blue-600 px-[5px] text-white absolute left-[210px] top-[120px]"
+              >vs</span
+            >
 
+            <button
+              class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              Full Comparision
+            </button>
+          </div>
+          <!--! card 3 -->
 
+          <div class="bg-white relative z-0 text-center pt-5 rounded-lg w-[430px] max-sm:w-full">
+            <div
+              class="containe flex justify-between items-center gap-[22px] px-3 max-sm:px-0 max-sm:gap-0  max-sm:justify-around"
+            >
+              <!-- left product -->
+              <div
+                class="bg-white text-center border-r pr-[38px] mb-4 border-gray-200 max-sm:pr-[18px]"
+              >
+                <a href="">
+                  <img
+                    class="mx-auto object-cover pt-3"
+                    src="./image/solar-5-metal-strap-black-official-200x200.webp"
+                    alt=""
+                  />
+                </a>
+                <h3
+                  class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-3 cursor-pointer"
+                >
+                  Haylou Solar 5 Smart Watch
+                </h3>
+                <div class="pb-4">
+                  <span class="font-semibold text-xl mr-2 text-[#ef4a23]"
+                    >5,850 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    6,399 Tk</span
+                  >
+                </div>
+              </div>
+              <!-- Right product -->
+              <div class="bg-white text-center">
+                <a href="">
+                  <img
+                    class="mx-auto object-cover"
+                    src="./image/bip-5-unity-grey-official-200x200.webp"
+                    alt=""
+                  />
+                </a>
+                <h3
+                  class="hover:text-[#ef4a23] underline font-semibold pt-2 pb-8 cursor-pointer"
+                >
+                  Amazfit Bip 5 Unity
+                </h3>
 
-       <div class="pb-4">
-        <span class="font-semibold text-xl mr-2 text-[#ef4a23]">59,500 Tk</span>
-       <span class="font-medium line-through text-gray-500"  > 20,000 Tk</span>
-
-       </div>
-      </div>
-      </div>
-      <span class="bg-blue-600 px-[5px] text-white absolute left-[210px] top-[120px]">vs</span>
-
-      <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px]  w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out
-         transform hover:scale-105">Full Comparision</button>
-    </div>
- 
-
-
-
-
-
-
-    </div>
-</section>
-
-    </main>
-    <footer class="bg-[#081621] py-[20px] pb-[50px] mt-[50px]">
-    <div class="mx-auto max-w-[1300px]  flex justify-between items-center">
-        <div class=" text-left">
-          <h4 class="text-sm text-white mt-12 inline-block tracking-[8px] font-semibold">SUPPORT</h4>
-          <button class="flex justify-center items-center gap-6 border-1 border-gray-600 hover:border-[#ef4a23] hover:border-1 py-3 pr-32 pl-8 rounded-full cursor-pointer mt-8">
-            <div>
-              <i class="fa-solid fa-phone text-xl py-3 border-r-1 pr-5 border-gray-600 text-white "></i>
+                <div class="pb-4">
+                  <span class="font-semibold text-xl mr-2 text-[#ef4a23]"
+                    >5,500 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    5,999 Tk</span
+                  >
+                </div>
+              </div>
             </div>
             
+            <span
+            class="bg-blue-600 px-[5px] text-white absolute left-[210px] top-[120px]"
+            >vs</span
+            >
+            
+            <button
+            class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out transform hover:scale-105"
+            >
+            Full Comparision
+          </button>
+        </div>
+        <!--! card 4 -->
+          <div class="bg-white relative z-0 text-center pt-5 rounded-lg w-[430px] max-sm:w-full" >
+            <div
+              class="containe flex justify-between items-center gap-[22px] px-3 max-sm:px-0 max-sm:gap-0  max-sm:justify-around"
+            >
+              <!-- left product -->
+              <div
+                class="bg-white text-center border-r pr-[38px] border-gray-200 max-sm:pr-[21px]"
+              >
+                <div>
+                  <a href="">
+                    <img
+                      class="mx-auto object-cover pt-3"
+                      src="./image/spacebuds-neo-01-200x200.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="pt-5">
+                  <h3
+                    class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-8 cursor-pointer"
+                  >
+                    Oraimo SpaceBuds Neo
+                  </h3>
+                </div>
+                <div class="pb-2">
+                  <span class="font-semibold text-xl mr-2 text-[#ef4a23]"
+                    >1,300 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    1,399 Tk</span
+                  >
+                </div>
+              </div>
+              <!-- Right product -->
+              <div class="bg-white text-center">
+                <div>
+                  <a href="">
+                    <img
+                      class="mx-auto object-cover max-sm:p-6"
+                      src="./image/haylou-x1-neo-02-200x200.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div>
+                  <h3
+                    class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-10 cursor-pointer"
+                  >
+                    Haylou X1 Neo True Wireless Earbuds
+                  </h3>
+                </div>
+
+                <div class="pb-10">
+                  <span class="font-semibold text-xl mr-4 text-[#ef4a23]"
+                    >19,999 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    20,000 Tk</span
+                  >
+                </div>
+              </div>
+            </div>
+            <span
+              class="bg-blue-600 px-[5px] text-white absolute left-[185px] top-[120px]"
+              >vs</span
+            >
+
+            <button
+              class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              Full Comparision
+            </button>
+          </div>
+          <!--! card 5 -->
+
+          <div class="bg-white relative z-0 text-center pt-5 rounded-lg w-[430px] max-sm:w-full">
+            <div
+              class="containe flex justify-between items-center gap-[22px] px-3 max-sm:px-0 max-sm:gap-0  max-sm:justify-around"
+            >
+              <!-- left product -->
+              <div
+                class="bg-white text-center border-r pr-[38px] mb-4 border-gray-200 max-sm:pr-[10px]"
+              >
+                <a href="">
+                  <img
+                    class="mx-auto object-cover pt-3 max-sm:p-6"
+                    src="./image/24b20jh2-08-200x200.webp"
+                    alt=""
+                  />
+                </a>
+                <h3
+                  class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-8 cursor-pointer"
+                >
+                  AOC 22B20JH2 22" 100Hz 1ms IPS FHD Monitor
+                </h3>
+                <div class="pb-4">
+                  <span class="font-semibold text-xl mr-4 text-[#ef4a23]"
+                    >12,000 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    20,000 Tk</span
+                  >
+                </div>
+              </div>
+              <!-- Right product -->
+              <div class="bg-white text-center">
+                <a href="">
+                  <img
+                    class="mx-auto object-cover max-sm:p-6"
+                    src="./image/pro-mp225-04-200x200.webp"
+                    alt=""
+                  />
+                </a>
+                <h3
+                  class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-8 cursor-pointer"
+                >
+                  MSI PRO MP225 21.5" 100Hz IPS FHD Monitor
+                </h3>
+
+                <div class="pb-4">
+                  <span class="font-semibold text-xl mr-2 text-[#ef4a23]"
+                    >12,800 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    20,000 Tk</span
+                  >
+                </div>
+              </div>
+            </div>
+            <span
+              class="bg-blue-600 px-[5px] text-white absolute left-[210px] top-[120px]"
+              >vs</span
+            >
+
+            <button
+              class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              Full Comparision
+            </button>
+          </div>
+          <!--! card 6 -->
+
+          <div class="bg-white relative z-0 text-center pt-5 rounded-lg w-[430px] max-sm:w-full">
+            <div
+              class="containe flex justify-between items-center gap-[22px] px-3 max-sm:px-0 max-sm:gap-0  max-sm:justify-around" >
+              <!-- left product -->
+              <div
+                class="bg-white text-center border-r pr-[38px] mb-4 border-gray-200 max-sm:pr-[28px]"
+              >
+                <div>
+                  <a href="">
+                    <img
+                      class="mx-auto object-cover pt-3 max-sm:p-3"
+                      src="./image/ideapad-slim-3i-15iru8-01-200x200.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="pt-12">
+                  <h3
+                    class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-8 cursor-pointer"
+                  >
+                    Lenovo IdeaPad
+                  </h3>
+                </div>
+                <div class="pb-4">
+                  <span class="font-semibold text-xl mr-2 text-[#ef4a23]"
+                    >12,000 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    20,000 Tk</span
+                  >
+                </div>
+              </div>
+              <!-- Right product -->
+              <div class="bg-white text-center">
+                <div>
+                  <a href="">
+                    <img
+                      class="mx-auto object-cover max-sm:p-6"
+                      src="./image/vivobook-go-15-l1504fa-mixed-black-01-200x200.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="">
+                  <h3
+                    class="hover:text-[#ef4a23] underline font-semibold pt-8 pb-14 cursor-pointer"
+                  >
+                    ASUS Vivobook
+                  </h3>
+                </div>
+
+                <div class="pb-4">
+                  <span class="font-semibold text-xl mr-2 text-[#ef4a23]"
+                    >59,500 Tk</span
+                  >
+                  <span class="font-medium line-through text-gray-500">
+                    20,000 Tk</span
+                  >
+                </div>
+              </div>
+            </div>
+            <span
+              class="bg-blue-600 px-[5px] text-white absolute left-[210px] top-[120px]"
+              >vs</span
+            >
+
+            <button
+              class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] w-[90%] font-semibold rounded-md mb-4 py-2 transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              Full Comparision
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#081621] py-[20px] pb-[50px] mt-[50px] ">
+      <div class="mx-auto max-w-[1300px] flex justify-between items-center max-sm:flex-col">
+        <div class="text-left">
+          <h4
+            class="text-sm text-white mt-12 inline-block tracking-[8px] font-semibold"
+          >
+            SUPPORT
+          </h4>
+          <button
+            class="flex justify-center items-center gap-6 border-1 border-gray-600 hover:border-[#ef4a23] hover:border-1 py-3 pr-32 pl-8 rounded-full cursor-pointer mt-8"
+          >
+            <div>
+              <i
+                class="fa-solid fa-phone text-xl py-3 border-r-1 pr-5 border-gray-600 text-white"
+              ></i>
+            </div>
+
             <div class="text-left">
               <p class="text-sm text-gray-500">9 AM - 8PM</p>
               <span class="font-semibold text-2xl text-[#ef4a23]">16793</span>
             </div>
           </button>
-          <button class="flex justify-center items-center gap-6 border-1 border-gray-600 hover:border-[#ef4a23] hover:border-1 py-3 pr-10 pl-8 rounded-full cursor-pointer mt-8">
+          <button
+            class="flex justify-center items-center gap-6 border-1 border-gray-600 hover:border-[#ef4a23] hover:border-1 py-3 pr-10 pl-8 rounded-full cursor-pointer mt-8"
+          >
             <div>
-              <i class="fa-solid fa-location-dot text-xl py-3 border-r-1 pr-5 border-gray-600 text-white "></i>
+              <i
+                class="fa-solid fa-location-dot text-xl py-3 border-r-1 pr-5 border-gray-600 text-white"
+              ></i>
             </div>
-            
+
             <div class="text-left">
               <p class="text-sm text-gray-500">Srore Location</p>
-              <span class="font-semibold text-2xl text-[#ef4a23]">Find Our Stores</span>
+              <span class="font-semibold text-2xl text-[#ef4a23]"
+                >Find Our Stores</span
+              >
             </div>
           </button>
-          
         </div>
-          <div >
-            <h4 class="text-sm text-white mt-12 inline-block tracking-[8px] font-semibold text-center">ABOUT US</h4>
+        <div >
+          <h4
+            class="text-sm text-white mt-12 inline-block tracking-[8px] font-semibold text-center"
+          >
+            ABOUT US
+          </h4>
 
-          <ul class="grid grid-cols-3   gap-4  mt-5 " >
-
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">Affiliate Program</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">EMI Terms</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">About Us</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">Online Delivery</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">Privacy Policy</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">Terms and Conditions</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">Refund and Return Policy</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">Star Point Policy</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href=""> Career</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">Blog</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">Contact Us</a></li>
-            <li><a class="text-gray-500 hover:text-[#ef4a23] hover:underline" href="">Brands</a></li>
+          <ul class="grid grid-cols-3 gap-4 mt-5 max-sm:grid-cols-2">
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >Affiliate Program</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >EMI Terms</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >Online Delivery</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >Terms and Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >Refund and Return Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >Star Point Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+              >
+                Career</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-gray-500 hover:text-[#ef4a23] hover:underline"
+                href=""
+                >Brands</a
+              >
+            </li>
           </ul>
-          </div>
-        <div class="leading-8">
-          <h4 class="text-xl text-white mt-12 inline-block tracking-[5px] font-semibold">STAY CONNECTED</h4>
+        </div>
+        <div class="leading-8 max-sm:mb-[50px]">
+          <h4
+            class="text-xl text-white mt-12 inline-block tracking-[5px] font-semibold"
+          >
+            STAY CONNECTED
+          </h4>
           <h5>Star Tech Ltd</h5>
-          <span class="text-gray-500">Head Office: 28 Kazi Nazrul Islam Ave,</span><br>
+          <span class="text-gray-500"
+            >Head Office: 28 Kazi Nazrul Islam Ave,</span
+          ><br />
           <span class="text-gray-500">Navana Zohura Square, Dhaka 1000</span>
-          <p class="text-gray-500"> Email:</p>
-          <a class="text-[#ef4a23] hover:underline" href="">mdrifathasan5127@gmail.com</a>
+          <p class="text-gray-500">Email:</p>
+          <a class="text-[#ef4a23] hover:underline " href=""
+            >mdrifathasan5127@gmail.com</a
+          >
         </div>
-        <div>
-
-        </div>
-    </div>
+      </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

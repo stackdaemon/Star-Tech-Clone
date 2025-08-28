@@ -113,3 +113,53 @@
       <button class="bg-blue-50 hover:bg-blue-500 text-blue-600 hover:text-white ring-[0px] py-2 w-[90%] mb-4  font-semibold rounded-md transition duration-300 ease-in-out
          transform hover:scale-105">Full Comparision</button>
     </div> --> */
+
+
+    /* <section class="mx-auto max-w-[1300px] mt-7">
+        <div class="baner_container flex justify-between gap-2 ">
+          <!-- left image -->
+          <div class="w-[75%]   " >
+            <img class="w-[950px] h-[509px] px-1 object-fill shadow-[5px_5px_0_rgba(0,0,0,0.03)]" src="./image/star-link-home-2025-banner-982x500.webp " alt="">
+          </div>
+          <!-- sub container -->
+          <div class="sub_banner_container max-w-[25%] h-full px-1 ">
+            <div class="bg-[#FFE8A1] py-6 px-8 text-center shadow-[5px_5px_0_rgba(0,0,0,0.03)] mb-8">
+              <h4 class="font-bold">Compare Product</h4>
+              <p class="text-[#666666]">Choose Two Products to Compare</p>
+              <!-- input part 1 -->
+              <div class="relative mt-4">
+            <input
+              class="w-[100%] h-10 border-none rounded-sm bg-white px-3 outline-none"
+              placeholder="Search"
+              type="text"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass text-xl absolute right-3 top-3 cursor-pointer text-gray-500"
+            ></i>
+          </div>
+          <!-- input part 2 -->
+              <div class="relative mt-4">
+            <input
+              class="w-[100%] h-10 border-none rounded-sm bg-white px-3 outline-none mb-4 "
+              placeholder="Search"
+              type="text"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass text-xl absolute right-3 top-3 cursor-pointe text-gray-500 cursor-pointer"
+            ></i>
+          </div>
+          <button class="w-[100%] font-semibold py-2 border-2 border-blue-600 cursor-pointer hover:bg-[#3749bb] hover:text-white rounded-md">View Comparison</button>
+            </div>
+
+            <div >
+              <img class=" shadow-[5px_5px_0_rgba(0,0,0,0.03)] p-1" src="./image/job-career-2024.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </section> */
+
+      .hide{
+        display: none;
+      }
+
+
